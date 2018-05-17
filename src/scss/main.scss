@@ -1,0 +1,44 @@
+// ITCSS structure
+// Original post by Harry Roberts https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// 01. Settings
+@import '01-settings/settings.config';
+@import '01-settings/settings.animations';
+@import '01-settings/settings.breakpoints';
+@import '01-settings/settings.colors';
+@import '01-settings/settings.spacing';
+@import '01-settings/settings.typography';
+@import '01-settings/settings.z-layers';
+
+// 02.Tools
+@import '../../node_modules/sass-mq/mq.scss';
+@import '02-tools/tools.animations';
+@import '02-tools/tools.clearfix';
+@import '02-tools/tools.hidden';
+@import '02-tools/tools.on-event';
+@import '02-tools/tools.placeholder';
+@import '02-tools/tools.spacing';
+
+// 03. Generic
+@import '../../node_modules/normalize.css/normalize.css';
+@import '03-generic/generic.selection';
+
+// 04. Elements
+@import '04-elements/elements.all';
+@import '04-elements/elements.body';
+@import '04-elements/elements.html';
+@import '04-elements/elements.links';
+
+// 05. Objects
+@import '05-objects/objects.container';
+@import '05-objects/objects.wrapper';
+@import '05-objects/objects.modal';
+
+// 06. Components
+@import '06-components/components.alert';
+@import '06-components/components.button';
+
+// 99. Utilities
+@import '99-utilities/utilities.clearfix';
+@import '99-utilities/utilities.text';
+@import '99-utilities/utilities.visibility';
