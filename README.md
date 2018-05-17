@@ -12,6 +12,8 @@ It was created by [Harry Roberts](https://csswizardry.com/) and it works very we
 
 Check out [INUITCSS](https://github.com/inuitcss/inuitcss) to see the best example of ITCSS.
 
+![ITCSS Layers](img/itcss-layers.svg)
+
 ## Learn more about ITCSS
 
 * [📄 Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528), Harry Roberts - Creative Bloq
