@@ -1,2 +1,2 @@
-# itcss-structure-sample
-A simple ITCSS structure sample
+# ITCSS Sample
+A simple ITCSS folder structure sample.
