@@ -16,4 +16,4 @@ Check out [INUITCSS](https://github.com/inuitcss/inuitcss) to see the best examp
 
 * [📄 Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528), Harry Roberts - Creative Bloq
 * [📺 Managing CSS Projects with ITCSS](https://youtu.be/1OKZOV-iLj4), Harry Roberts - YouTube
-* [INUITCSS Project](https://github.com/inuitcss/inuitcss), Harry Roberts - GitHub
+* [:octocat: INUITCSS Project](https://github.com/inuitcss/inuitcss), Harry Roberts - GitHub
