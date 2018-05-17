@@ -12,7 +12,11 @@ It was created by [Harry Roberts](https://csswizardry.com/) and it works very we
 
 Check out [INUITCSS](https://github.com/inuitcss/inuitcss) to see the best example of ITCSS.
 
+&nbsp;
+
 ![ITCSS Layers](img/itcss-layers.svg)
+
+&nbsp;
 
 ## Learn more about ITCSS
 
