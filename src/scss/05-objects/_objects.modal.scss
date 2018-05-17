@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #MODAL-OBJECT
+   ========================================================================== */
+
+.o-modal {
+  @include basic-transition(transform, $duration: 0.5s);
+
+  position: fixed;
+  z-index: map-get($z-layers, modal);
+  left: 50%;
+  top: 50%;
+  display: none;
+  width: 600px;
+  max-width: 90%;
+  max-width: calc(100% - #{$spacing-lg});
+  max-height: 90%;
+  max-height: calc(100% - #{$spacing-lg});
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translate(-50%, -200vh);
+  transform: translate(-50%, calc(-100vh - 105%));
+  will-change: transform;
+  pointer-events: none;
+  -webkit-overflow-scrolling: touch;
+
+  @supports (pointer-events: auto) {
+    display: block;
+    pointer-events: none;
+  }
+
+  @include mq($from: tablet) {
+    max-width: calc(100% - #{$spacing-lg * 2});
+    max-height: calc(100% - #{$spacing-lg * 2});
+  }
+
+  @include mq($from: desktop) {
+    max-width: calc(100% - #{$spacing-xl * 2});
+    max-height: calc(100% - #{$spacing-xl * 2});
+  }
+
+  &.is-active {
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+  }
+}
