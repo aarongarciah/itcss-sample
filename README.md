@@ -14,7 +14,7 @@ Check out [INUITCSS](https://github.com/inuitcss/inuitcss) to see the best examp
 
 &nbsp;
 
-![ITCSS Layers](img/itcss-layers.svg)
+![ITCSS Layers](img/itcss-layers.png)
 
 &nbsp;
 
