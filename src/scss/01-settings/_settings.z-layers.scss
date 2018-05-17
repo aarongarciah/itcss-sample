@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #Z-LAYERS-VARIABLES
+   ========================================================================== */
+
+$z-layers-list: (
+  backdrop,
+  header,
+  nav-mobile,
+  modal
+);
+$z-layers: ();
+$layer-value: 1000;
+
+@each $layer-name in $z-layers-list {
+  $layer-value: $layer-value + 1;
+  $z-layers: map_merge($z-layers, ($layer-name: $layer-value));
+}
