@@ -1,0 +1,69 @@
+.c-btn {
+  @include basic-transition((transform, color, border-color, background-color));
+
+  display: inline-block;
+  padding: 1em 1.5em 1em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: $color-dark;
+  border: 1px solid $color-dark;
+  cursor: pointer;
+
+  @include on-event {
+    color: $color-grey;
+    border-color: currentColor;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  & + & {
+    margin-bottom: $spacing-unit;
+  }
+
+  @include mq($from: desktop) {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+.c-btn--block {
+  display: block;
+  width: 100%;
+}
+
+.c-btn--lg {
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  @include mq($from: desktop) {
+    font-size: 13px;
+  }
+}
+
+.c-btn--primary {
+  border-color: $color-primary;
+  color: #fff;
+  background-color: $color-primary;
+
+  @include on-event {
+    border-color: $color-dark;
+    color: #fff;
+    background-color: $color-dark;
+  }
+}
+
+.c-btn--secondary {
+  border-color: $color-secondary;
+  color: $color-secondary;
+
+  @include on-event {
+    border-color: $color-dark;
+    color: $color-dark;
+  }
+}
+

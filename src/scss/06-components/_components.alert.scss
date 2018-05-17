@@ -1,0 +1,53 @@
+.c-alert {
+  display: none;
+  position: relative;
+  padding: $spacing-md;
+  border: 1px solid currentColor;
+  margin: $spacing-lg 0;
+  font-size: 1rem;
+  color: $color-dark;
+
+  &.is-visible {
+    display: block;
+  }
+
+  p,
+  ul {
+    margin: 0 0 1em;
+  }
+
+  p:last-child,
+  ul:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: phablet) {
+    padding: $spacing-lg;
+  }
+}
+
+.c-alert__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2em;
+
+  &:before {
+    content: '×';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+  }
+}
+
+.c-alert--danger {
+  border-color: $color-danger;
+}
+
+.c-alert--warning {
+  border-color: $color-warning;
+}
