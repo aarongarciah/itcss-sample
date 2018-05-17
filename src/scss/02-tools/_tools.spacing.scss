@@ -1,0 +1,61 @@
+@mixin spacing-sides($right: true, $left: true) {
+  @if $right {
+    padding-right: $spacing-sides;
+  }
+
+  @if $left {
+    padding-left: $spacing-sides;
+  }
+
+  @include mq($from: tablet) {
+    @if $right {
+      padding-right: $spacing-sides\@tablet;
+    }
+
+    @if $left {
+      padding-left: $spacing-sides\@tablet;
+    }
+  }
+
+  @include mq($from: desktop) {
+    @if $right {
+      padding-right: $spacing-sides\@desktop;
+    }
+
+    @if $left {
+      padding-left: $spacing-sides\@desktop;
+    }
+  }
+}
+
+@mixin margin-sides($right: true, $left: true, $negative: false) {
+  $minus: if($negative, '-', '');
+
+  @if $right {
+    margin-right: #{$minus}$spacing-sides;
+  }
+
+  @if $left {
+    margin-left: #{$minus}$spacing-sides;
+  }
+
+  @include mq($from: tablet) {
+    @if $right {
+      margin-right: #{$minus}$spacing-sides\@tablet;
+    }
+
+    @if $left {
+      margin-left: #{$minus}$spacing-sides\@tablet;
+    }
+  }
+
+  @include mq($from: desktop) {
+    @if $right {
+      margin-right: #{$minus}$spacing-sides\@desktop;
+    }
+
+    @if $left {
+      margin-left: #{$minus}$spacing-sides\@desktop;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+///* ========================================================================
+//   #ON-EVENT
+//   ======================================================================== */
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+// .usage {
+//   @include on-event {
+//     color: rebeccapurple;
+//   }
+// }
+// }
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
